@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Damage Detection</title>
+  <style>
+    /* Simple styles for video and canvas */
+    video, canvas {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Car Damage Detection with ONNX</h1>
+
+  <!-- Video upload -->
+  <input type="file" id="video-upload" accept="video/*">
+  <br><br>
+
+  <!-- Video element -->
+  <video id="video" controls width="640" height="480"></video>
+
+  <!-- Canvas for drawing bounding boxes -->
+  <canvas id="canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.14.0/dist/ort.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
